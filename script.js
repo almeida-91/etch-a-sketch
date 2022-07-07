@@ -2,12 +2,14 @@
 
 const container = document.getElementById(`container`);
 const button = document.getElementById(`changeSize`);
+const clearbutton = document.getElementById(`clearGrid`);
 
+clearbutton.addEventListener(`click`, clear);
 button.addEventListener(`click`, defaultGrid);
 
 function defaultGrid(size){
-    //clear();
     size = prompt(`Select Grid Size`);
+    clear();
     for (i = 0 ; i<size; i++){
         let row = document.createElement(`div`);
         row.classList.add(`cell`);
@@ -20,22 +22,24 @@ function defaultGrid(size){
             cell.onmouseover = () =>{
                 cell.style.background = `black`;
             }
-
         }
     }
 }
 
 const cells = document.getElementsByClassName(`subcell`);
 
-cells.addEventListener(`mouseover`, darken());
+//cells.addEventListener(`mouseover`, darken());
 
 function darken(){
 
 }
 
-/* function clear(){
-    let container = document.getElementById(`container`);
-    while(container.hasChildNodes){
-        container.removeChild(container.lastElementChild);
+function clear(){
+    let element1 = container.lastChild;
+    if (element1 != null){
+        container.lastChild.remove();
+        clear();
+    } else {
+        return 0;
     }
-} */
+}

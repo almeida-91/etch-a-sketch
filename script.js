@@ -1,5 +1,3 @@
-//document.get
-
 const container = document.getElementById(`container`);
 const button = document.getElementById(`changeSize`);
 const clearbutton = document.getElementById(`clearGrid`);

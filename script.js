@@ -15,21 +15,12 @@ function defaultGrid(size){
         for(j=0 ; j<size; j++){
             let cell = document.createElement(`div`);
             cell.classList.add(`subcell`);
-            //cell.addEventListener(`mouseover`, paintimage());
             row.appendChild(cell);
             cell.onmouseover = () =>{
-                cell.style.background = `black`;
+                cell.style.background = `rgba(${Math.random()*255},${Math.random()*255},${Math.random()*255},0.5)`;
             }
         }
     }
-}
-
-const cells = document.getElementsByClassName(`subcell`);
-
-//cells.addEventListener(`mouseover`, darken());
-
-function darken(){
-
 }
 
 function clear(){

@@ -3,19 +3,19 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: gray;
+    margin: 0px;
 }
 
 #container{ 
     width: 1000px;
     height: 1000px;
     display: flex;
-    /*border: 1px solid black;*/
     flex-direction: column;
     margin: 50px;
 }
 
 .cell{
-    /*border: 1px solid black;*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -23,6 +23,37 @@ body{
 }
 
 .subcell{
-    border: 1px solid black;
+    border: 0.5px solid rgb(0, 0, 0);
     flex: 1;
+    background-color: white;
+}
+
+button{
+    background-color: dodgerblue;
+    padding: 15px;
+    font-size: large;
+    font-weight: 900;
+    border: 0.5px solid white;
+    border-radius: 10px;
+    font-family: sans-serif;
+    color: white;
+    font-size: large;
+    margin: 20px;
+}
+
+#header{
+    font-style: italic;
+    text-decoration: underline;
+    text-decoration: dotted;
+    border-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    background-color: dodgerblue;
+    border-bottom: 1px solid ;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
 }

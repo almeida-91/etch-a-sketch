@@ -17,7 +17,8 @@ function defaultGrid(size){
             cell.classList.add(`subcell`);
             row.appendChild(cell);
             cell.onmouseover = () =>{
-                cell.style.background = `rgba(${Math.random()*255},${Math.random()*255},${Math.random()*255},0.5)`;
+                let backgroundColor = `rgba(${Math.random()*255},${Math.random()*255},${Math.random()*255},1)`;
+                cell.style.background = backgroundColor;
             }
         }
     }

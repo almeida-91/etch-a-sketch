@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#container{ 
+    width: 1000px;
+    height: 1000px;
+    display: flex;
+    /*border: 1px solid black;*/
+    flex-direction: column;
+    margin: 50px;
+}
+
+.cell{
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1;
+}
+
+.subcell{
+    border: 1px solid black;
+    flex: 1;
+}
